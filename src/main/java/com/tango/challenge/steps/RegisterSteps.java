@@ -12,6 +12,7 @@ import io.cucumber.java.en.When;
 public class RegisterSteps {
 
 	String url = "https://www.mavenclinic.com/app";
+	String message = "(If so, your membership is free!)";
 	RegisterAccountFunctionalities register = new RegisterAccountFunctionalities();
 	OnboardingFuncionalities onboarding = new OnboardingFuncionalities();
 	Faker faker = new Faker();
@@ -43,7 +44,7 @@ public class RegisterSteps {
 	@Then("I should see create account sucessfuly")
 	public void i_should_see_create_account_sucessfuly() {
 		onboarding.waitforElementPresenteOnboarding();
-		Assert.assertEquals("(If so, your membership is free!)", onboarding.verifyGetFieldTextOnboarding());
+		Assert.assertEquals(message, onboarding.verifyGetFieldTextOnboarding());
 	}
 
 }

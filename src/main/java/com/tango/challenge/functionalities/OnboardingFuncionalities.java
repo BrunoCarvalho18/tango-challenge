@@ -18,7 +18,7 @@ public class OnboardingFuncionalities {
 	}
 	
 	public void waitforElementPresenteOnboarding() {
-		onboarding.waitForElementPresent(By.xpath("//*[contains(text(),'(If so, your membership is free!)')]"));
+		onboarding.waitForElementPresent(By.cssSelector("#root > main > div > div.DownloadAppHeader_downloadAppContainer__2ddwF > div > p"));
 	}
 	
 

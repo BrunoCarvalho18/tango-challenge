@@ -13,7 +13,7 @@ public class OnboardingPage extends BasePage {
 	}	
 	
 
-	@FindBy(xpath = "//*[contains(text(),'(If so, your membership is free!)')]")
+	@FindBy(css = "#root > main > div > div.DownloadAppHeader_downloadAppContainer__2ddwF > div > p")
 	WebElement textPageOnboarding;
 	
 	public WebElement getTextPageOnboarding() {

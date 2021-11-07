@@ -8,10 +8,17 @@ Feature: Login
   @login
   Scenario Outline: Login with valid credentials
     Given I am on the login page
-    When  I fill "email" with "password" correctly
+    When  I fill "<email>" with "password" correctly
     Then  I should see login sucessful 
 
     Examples: 
-      | email                            |   password                            | 
-      | brunocarvalhodesa@gmail.com      |   it is not good to put password      |
+      | email                            |   password                         | 
+      | me@gmail.com                     |                                    |    
+      
+   
+       
+
+
+      
+   
    

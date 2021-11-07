@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 public class RegisterInvalidSteps {
 	
 	RegisterAccountFunctionalities register = new RegisterAccountFunctionalities();
+	String message = "This doesn't look like a valid email address";
 	
 	@When("I fill {string} with {string} with {string} incorrectly")
 	public void i_fill_with_with_incorrectly(String firstName, String lastName, String email) {
@@ -26,7 +27,7 @@ public class RegisterInvalidSteps {
 	@Then("I should see create account unsucessfuly")
 	public void i_should_see_create_account_unsucessfuly() {
 	   register.getTextEmailField();
-	   Assert.assertEquals("This doesn't look like a valid email address", register.getTextEmailField());
+	   Assert.assertEquals(message, register.getTextEmailField());
 	}
 
 

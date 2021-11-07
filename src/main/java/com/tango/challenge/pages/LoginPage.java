@@ -14,23 +14,23 @@ public class LoginPage  extends BasePage{
 	}
 	
 	@FindBy(id = "email")
-	WebElement fieldFirstName;
+	WebElement fieldFEmail;
 	
 	@FindBy(id = "password")
-	WebElement fieldLastName;
+	WebElement fieldPassword;
 	
-	@FindBy(xpath = "//button[contains(text(),'Sign in')]")
+	@FindBy(css = "#root > main > section > div > div:nth-child(2) > form > button > span")
 	WebElement buttonRegister;
 
-	public WebElement getFieldFirstName() {
-		return fieldFirstName;
+	public WebElement getFieldFEmail() {
+		return fieldFEmail;
 	}
 
-	public WebElement getFieldLastName() {
-		return fieldLastName;
+	public WebElement getFieldPassword() {
+		return fieldPassword;
 	}
 
-	public WebElement getButtonRegister() {
+	public WebElement getButtonSignIn() {
 		return buttonRegister;
 	}
 

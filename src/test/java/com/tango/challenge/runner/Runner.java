@@ -9,12 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = { "com.tango.challenge.steps" }, features = {
-		"src/main/resources" },tags =  "@register-invalid" )
+		"src/main/resources" },tags =  "@login")
 public class Runner {
 	
 	@AfterClass
 	public static void encerraDriver() {
-		//getDriver().close();
+		getDriver().close();
 	}
 
 }
