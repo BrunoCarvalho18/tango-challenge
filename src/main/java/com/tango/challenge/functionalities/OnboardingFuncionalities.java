@@ -13,12 +13,12 @@ public class OnboardingFuncionalities {
 		onboarding = new OnboardingPage();
 	}
 	
-	public String verifyGetFieldCssSelector() {
+	public String verifyGetFieldTextOnboarding() {
 		return onboarding.getTextPageOnboarding().getText();
 	}
 	
 	public void waitforElementPresenteOnboarding() {
-		onboarding.esperarPorElementoPresente(By.xpath("//*[contains(text(),'(If so, your membership is free!)')]"));
+		onboarding.waitForElementPresent(By.xpath("//*[contains(text(),'(If so, your membership is free!)')]"));
 	}
 	
 

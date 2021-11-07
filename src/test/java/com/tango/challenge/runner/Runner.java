@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = { "com.tango.challenge.steps" }, features = {
-		"src/main/resources" },tags =  "@register-valid" )
+		"src/main/resources" },tags =  "@register-invalid" )
 public class Runner {
 	
 	@AfterClass

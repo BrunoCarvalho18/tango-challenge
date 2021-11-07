@@ -19,8 +19,8 @@ Feature: Create Account
   @register-invalid
   Scenario Outline: Create Account with invalid credentials
     Given I am on the create account page
-    When  I fill "firstname" with "lastname" with "email" incorrectly    
-    And   I fill "password" incorrectly
+    When  I fill "<firstname>" with "<lastname>" with "<email>" incorrectly    
+    And   I fill "<password>" incorrectly
     Then  I should see create account unsucessfuly 
 
     Examples: 

@@ -18,8 +18,8 @@ public class RegisterAccountFunctionalities {
 		home.getButtonCreateAccount().click();
 	}
 	
-	public void waitforElementPresenteFirstName() {
-		home.esperarPorElementoPresente(By.id("firstName"));
+	public void waitforElementPresentFirstName() {
+		home.waitForElementPresent(By.id("firstName"));
 	}
 	
 	public void writeFirstName(String firstName) {
@@ -53,6 +53,10 @@ public class RegisterAccountFunctionalities {
 	public void clickButtonRegister() {
 		register.getButtonRegister().click();
 		
+	}
+	
+	public String getTextEmailField() {
+		return register.getFieldEmailError().getText();
 	}
 
 }

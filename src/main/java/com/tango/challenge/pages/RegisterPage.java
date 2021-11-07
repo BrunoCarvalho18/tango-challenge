@@ -20,6 +20,9 @@ public class RegisterPage extends BasePage {
 	
 	@FindBy(id = "email")
 	WebElement fieldEmail;
+
+	@FindBy(id="email_error")
+	WebElement fieldEmailError;
 	
 	@FindBy(name = "password")
 	WebElement fieldPassword;
@@ -54,6 +57,10 @@ public class RegisterPage extends BasePage {
 
 	public WebElement getButtonRegister() {
 		return buttonRegister;
+	}
+	
+	public WebElement getFieldEmailError() {
+		return fieldEmailError;
 	}
 
 
